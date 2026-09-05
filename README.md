@@ -1,4 +1,4 @@
-# BCDEDT - Pipeline ETL de Vendas
+# Pipeline ETL de Vendas com Ferramentas Básicas
 
 Pipeline Python para extrair dados do banco operacional PostgreSQL, transformar o modelo relacional de vendas em um modelo dimensional simples e carregar o resultado no schema `dw`.
 
@@ -40,14 +40,7 @@ Crie o `.env` a partir do exemplo:
 Copy-Item .env.example .env
 ```
 
-Preencha usando URLs completas ou variáveis separadas. A origem também aceita o formato pedido no business case:
-
 ```env
-PG_HOST=host_origem
-PG_PORT=5432
-PG_DATABASE=banco_origem
-PG_USER=usuario_origem
-PG_PASSWORD=senha_origem
 DW_DATABASE_URL=postgresql+psycopg2://usuario:senha@localhost:5432/banco_dw
 ```
 
